@@ -126,8 +126,8 @@ namespace OOArduino {
 		 */
 		public void ReportAnalogPin( uint pin , Firmata.Commands mode )
 		{
-			Debug.Assert(  pin <  16 || pin >= _nrOfDigitalPins, "pin (" + pin + ") must be between 0 and 15 or real analog pin mapping" , pin );
-			Debug.Assert( (int)mode < 256 , "mode  (" + mode + ") for pin  (" + pin + ") must be between 0 and 255" , mode, pin );
+			Debug.AssertFormat(  pin <  16 || pin >= _nrOfDigitalPins, "pin (" + pin + ") must be between 0 and 15 or real analog pin mapping" , pin );
+			Debug.AssertFormat( (int)mode < 256 , "mode  (" + mode + ") for pin  (" + pin + ") must be between 0 and 255" , mode, pin );
 			
 			if ( IsProperlyInitializedAndConnected() ) {
 				firmata.ReportAnalogPin( pin, mode );
