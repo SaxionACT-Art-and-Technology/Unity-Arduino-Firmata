@@ -14,10 +14,15 @@ Arduino
 * Make a new project or use the project you are currently working in. 
 * Go to Assets > Import Package ...
 * Select the OOArduino.unitypackage
-* Import all.
+* Import.
 
-At this moment you probably see a lot of red warning signs in the console. 
-`Like 'error CS0234: The type or namespace name 'Ports' does not exist in the namespace 'System.IO'`    
+![screen shot 2017-06-12 at 16 50 03](https://user-images.githubusercontent.com/1760616/27042172-7d3ba672-4f96-11e7-976a-1d3a72d4de85.png)
+
+After import you'll probably see a lot of red warning signs in the console.   
+
+![screen shot 2017-06-12 at 16 50 33](https://user-images.githubusercontent.com/1760616/27042163-776688ca-4f96-11e7-8d67-a563182c2f9f.png)
+
+Like: `error CS0234: The type or namespace name 'Ports' does not exist in the namespace 'System.IO'`    
 Thats because you have to configure the 'Api Compatibility Level' to '.NET 2.0'. To do that:
 
 * Go to File > Build Settings ...
