@@ -9,7 +9,7 @@ Arduino
 * Find the name (OSX) or number (Windows) of the Serialport under Tools/Port. Remember the numeric part at the end. You need to add this in the Unity script.
 
 
-## Unity (tested in Unity 5.6.1)##
+## Unity (tested in Unity 5.6.1)
 
 * Make a new project or use the project you are currently working in. 
 * Go to Assets > Import Package ...
